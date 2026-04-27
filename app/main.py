@@ -20,15 +20,15 @@ if uploaded_file:
 
     if st.button("Generate Revision Plan"):
         try:
-            st.subheader("📅 Revision Plan")
+            st.subheader(" Revision Plan")
             st.write(generate_revision_plan(retriever))
         except Exception as e:
             st.error(str(e))
 
     if st.button("Generate Flashcards"):
-        st.subheader("🧠 Flashcards")
+        st.subheader(" Flashcards")
         st.write(generate_flashcards(retriever))
 
     if st.button("Generate Quiz"):
-        st.subheader("❓ Quiz")
+        st.subheader(" Quiz")
         st.write(generate_quiz(retriever))
